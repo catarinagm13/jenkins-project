@@ -8,12 +8,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh docker build -t node .
+                sh 'docker build -t node .' 
             }
         }
         stage('Run') {
             steps {
-                sh docker run -d -p 3000:3000 node 
+                sh 'docker run -d -p 3000:3000 node'
             }
         }
     }

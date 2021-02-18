@@ -2,7 +2,7 @@ pipeline {
     agent { dockerfile true }
 
     parameters {
-        string(name: 'node', defaultvalue: "node", description: 'imagem node')
+        string(name: 'node', defaultValue: "node", description: 'imagem node')
     }
 
     stages {
